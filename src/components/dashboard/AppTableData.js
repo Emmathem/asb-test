@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Table } from 'antd';
+import { Table, Card } from 'antd';
 
 const tableColumn = [
   {
@@ -9,17 +9,17 @@ const tableColumn = [
   },
   {
     title: 'LOCATION',
-    dataIndex: 'location',
+    dataIndex: 'address',
     scopedSlots: { customRender: 'location' },
   },
   {
     title: 'STATUS',
-    dataIndex: 'location',
-    scopedSlots: { customRender: 'location' },
+    dataIndex: 'address',
+    scopedSlots: { customRender: 'address' },
   },
   {
     title: 'ENTRIES',
-    dataIndex: 'location',
+    dataIndex: 'age',
     scopedSlots: { customRender: 'location' },
   },
   {
@@ -29,11 +29,46 @@ const tableColumn = [
   },
 ];
 
+const data = [];
+for (let i = 0; i < 46; i++) {
+  data.push({
+    key: i,
+    name: `Edward King ${i}`,
+    age: 32,
+    address: `London, Park Lane no. ${i}`,
+  });
+}
+
 class AppTableData extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      selectedRowKeys: [],
+    };
+
+    this.onSelectChange = this.onSelectChange.bind(this);
+  }
+  onSelectChange = selectedRowKeys => {
+    console.log('selectedRowKeys changed: ', selectedRowKeys);
+    this.setState({ selectedRowKeys });
+  };
   render() {
+    const { selectedRowKeys } = this.state;
+
+    const rowSelection = {
+      selectedRowKeys,
+      onChange: this.onSelectChange,
+    };
     return (
-      <div>
-        <Table columns={tableColumn} />
+      <div className="cardSettings">
+        <Card className="innerCard" bordered={false}>
+          <Table
+            rowSelection={rowSelection}
+            columns={tableColumn}
+            dataSource={data}
+          />
+        </Card>
       </div>
     );
   }

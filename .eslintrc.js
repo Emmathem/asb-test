@@ -6,14 +6,12 @@ module.exports = {
   },
   parserOptions: {
     parser: 'babel-eslint',
-    // ecmaFeatures: {
-    //   jsx: true,
-    //   modules: true,
-    // },
-    ecmaVersion: 7,
+    ecmaVersion: 6,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
+      modules: true,
+      experimentalObjectRestSpread: true,
     },
   },
   extends: [

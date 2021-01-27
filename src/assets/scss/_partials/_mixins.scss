@@ -1,0 +1,107 @@
+@mixin ProductSans_Normal {
+  @font-face {
+    font-family: 'ProductSans_Normal';
+    src: local('ProductSans_Normal'), url("../../assets/fonts/ProductSans-Black.ttf");
+  }
+}
+
+//@mixin use-raviprakesh {
+//  @font-face {
+//    font-family: 'Ravi Prakash';
+//    font-style: normal;
+//    font-weight: 400;
+//    src: local('Ravi Prakash'), local('RaviPrakash-Regular'), url(../fonts/ravi_prakash.ttf) format('truetype');
+//    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+//  }
+//}
+
+@mixin ProductSans_Normal_Italic {
+  @font-face {
+    font-family: 'ProductSans_Normal_Italic';
+    src: local('ProductSans_Normal_Italic'), url("../../assets/fonts/ProductSans-BlackItalic.ttf");
+    font-weight: normal;
+  }
+}
+
+@mixin ProductSans-Bold {
+  @font-face {
+    font-family: 'ProductSans-Bold', sans-serif;
+    src: local('ProductSans-Bold'), url("../../assets/fonts/ProductSans-Bold.ttf");
+    font-weight: 600;
+  }
+}
+
+@mixin ProductSans-BoldItalic {
+  @font-face {
+    font-family: 'ProductSans-BoldItalic';
+    src: url("../../assets/fonts/ProductSans-BoldItalic.ttf");
+    font-weight: 600;
+    font-style: italic;
+  }
+}
+
+@mixin ProductSans-Italic {
+  @font-face {
+    font-family: 'ProductSans-Italic';
+    src: url("../../assets/fonts/ProductSans-Italic.ttf");
+    font-style: italic;
+  }
+}
+
+@mixin ProductSans-Light {
+  @font-face {
+    font-family: 'ProductSans-Light';
+    src: url("../../assets/fonts/ProductSans-Light.ttf");
+    font-weight: 100;
+  }
+}
+
+@mixin ProductSans-LightItalic {
+  @font-face {
+    font-family: 'ProductSans-LightItalic';
+    src: url("../../assets/fonts/ProductSans-LightItalic.ttf");
+    font-style: italic;
+    font-weight: 100;
+  }
+}
+
+@mixin ProductSans-Medium {
+  @font-face {
+    font-family: 'ProductSans-Medium';
+    src: url("../../assets/fonts/ProductSans-Medium.ttf");
+    font-weight: 500;
+  }
+}
+
+@mixin ProductSans-MediumItalic {
+  @font-face {
+    font-family: 'ProductSans-MediumItalic';
+    src: url("../../assets/fonts/ProductSans-MediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+
+@mixin ProductSans-Regular {
+  @font-face {
+    font-family: 'ProductSans-Regular';
+    src: url("../../assets/fonts/ProductSans-Regular.ttf");
+  }
+}
+
+@mixin ProductSans-Thin {
+  @font-face {
+    font-family: 'ProductSans-Thin';
+    src: url("../../assets/fonts/ProductSans-Thin.ttf");
+    font-weight: 300;
+  }
+}
+
+@mixin ProductSans-ThinItalic {
+  @font-face {
+    font-family: 'ProductSans-ThinItalic';
+    src: url("../../assets/fonts/ProductSans-ThinItalic.ttf");
+    font-weight: normal;
+    font-style: italic;
+  }
+}
