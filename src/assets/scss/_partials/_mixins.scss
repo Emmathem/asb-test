@@ -1,3 +1,7 @@
+@mixin boxShadow {
+  box-shadow: 0 4px 30px rgba(192, 192, 192, 0.25);
+}
+
 @mixin ProductSans_Normal {
   @font-face {
     font-family: 'ProductSans_Normal';

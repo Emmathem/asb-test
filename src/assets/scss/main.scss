@@ -76,8 +76,13 @@ body {
   }
 }
 .logo {
-  float: right;
-  margin: 16px 0 16px 24px;
+  //float: right;
+  //margin: 16px 0 16px 24px;
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
 }
 .ant-menu {
   background: none;
@@ -90,12 +95,6 @@ body {
     }
   }
 }
-.__timeLine {
-  margin-top: 20px;
-  h3 {
-    font-weight: bold;
-  }
-}
 .ant-timeline {
   padding: revert;
 }
@@ -106,13 +105,44 @@ body {
   background: $black_color;
   border-color: $black_color;
 }
-.iconBg {
-  background: $white_color;
-  background: #00A2D6;
-  display: inline-flex;
-  padding: 4px;
-  border-radius: 3px;
-  align-items: center;
+.sideBarSettings {
+  font-family: 'ProductSans-normal', sans-serif;
+  .summaryCard {
+    border-radius: 4px;
+    min-height: 1px;
+    padding: 10px 0;
+    @include boxShadow;
+  }
+  .bg_white {
+    background: $white_color;
+  }
+  .headerHolder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+  .__timeLine {
+    margin-top: 20px;
+  }
+  .timeLineCustom {
+    margin-top: 30px;
+    padding-left: 27px;
+  }
+  h3 {
+    font-weight: 700;
+    margin: 0;
+    font-size: 14px;
+  }
+  .iconBg {
+    background: $theme-blue;
+    border-radius: 5px;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 //custom scss
@@ -120,4 +150,9 @@ body {
 .ant-col-5 {
   flex: 0 0 246px;
   max-width: 246px;
+}
+
+.ant-col-19 {
+  flex: 0 0 984px;
+  max-width: 984px;
 }

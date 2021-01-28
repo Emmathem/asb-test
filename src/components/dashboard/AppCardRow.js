@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Col, Row } from 'antd';
+import { Card } from 'antd';
 import { InfoCircleOutlined } from '@ant-design/icons';
 
 class AppCardRow extends Component {
@@ -9,48 +9,48 @@ class AppCardRow extends Component {
   render() {
     return (
       <div className="cardSettings">
-        <Row gutter={[8, 8]}>
-          <Col span={5}>
+        <div className="row">
+          <div className="col-xl-3 col-md-6">
             <Card bordered={false} className="innerCard">
               <h2>
                 3455 <InfoCircleOutlined />
               </h2>
               <h4>Ongoing Metric</h4>
             </Card>
-          </Col>
-          <Col span={5}>
+          </div>
+          <div className="col-xl-3 col-md-6">
             <Card bordered={false} className="innerCard">
               <h2>
                 3455 <InfoCircleOutlined />
               </h2>
               <h4>Past Metric</h4>
             </Card>
-          </Col>
-          <Col span={5}>
+          </div>
+          <div className="col-xl-3 col-md-6">
             <Card bordered={false} className="innerCard">
               <h2>
                 3455 <InfoCircleOutlined />
               </h2>
               <h4>Missed Metric</h4>
             </Card>
-          </Col>
-          <Col span={5}>
+          </div>
+          <div className="col-xl-3 col-md-6">
             <Card bordered={false} className="innerCard">
               <h2>
                 3455 <InfoCircleOutlined />
               </h2>
               <h4>Failed Metric</h4>
             </Card>
-          </Col>
-          <Col span={5}>
+          </div>
+          <div className="col-xl-3 col-md-6">
             <Card bordered={false} className="innerCard">
               <h2>
                 3455 <InfoCircleOutlined />
               </h2>
               <h4>Pending Metric</h4>
             </Card>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
     );
   }
